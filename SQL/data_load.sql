@@ -73,7 +73,7 @@ SELECT COUNT(DISTINCT (medallion,hack_license)) FROM trip_fare_raw; -- 95731
 
 -- Creating a master table
 CREATE TABLE IF NOT EXISTS raw_master (
-	id		       INT GENERATED ALWAYS AS IDENTITY,
+	id					   INT GENERATED ALWAYS AS IDENTITY,
 	medallion              TEXT,
 	hack_license           TEXT,
 	vendor_id              TEXT,
